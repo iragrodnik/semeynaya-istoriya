@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Calendar, Clock, Users, MessageCircle, ArrowRight, Menu, X, Shield, Sparkles } from 'lucide-react';
+import { Calendar, Clock, Users, ArrowRight, Menu, X, Shield, Sparkles } from 'lucide-react';
+import { TelegramIcon, VKIcon } from './Icons';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,11 +79,11 @@ const App = () => {
         </div>
         
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-stone-800 dark:text-stone-100 leading-tight">
-            У вас есть <span className="text-rose-700 dark:text-rose-400 italic font-medium">машина времени</span>? 🕰️
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-stone-800 dark:text-stone-100 leading-tight">
+            Рассказываем истории, рисуем генограмму и изучаем семейную системную терапию
           </h1>
           <p className="text-lg md:text-xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl mx-auto">
-            Изучение семейной истории поможет совершить путешествие в прошлое, чтобы увидеть своих прабабушек молодыми, узнать тайны и найти ключи к сегодняшним трудностям.
+            На группе осваиваем теорию ССТ (семейная системная терапия). Разбираемся, как устроена и развивается семейная система.
           </p>
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-rose-700 dark:bg-rose-600 text-white rounded-full font-semibold shadow-xl shadow-rose-200 dark:shadow-rose-950/20 hover:bg-rose-800 dark:hover:bg-rose-500 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
@@ -99,14 +100,23 @@ const App = () => {
       <section id="about" className="py-20 bg-white dark:bg-stone-900/50">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl font-serif font-bold dark:text-stone-100">Путешествие к своим истокам</h2>
+            <h2 className="text-3xl font-serif font-bold dark:text-stone-100">Приглашаем в команду исследователей</h2>
             <div className="space-y-4 text-stone-600 dark:text-stone-400 text-lg">
-              <p>
-                Мы приглашаем вас в уникальное исследование. Это не просто лекция, а погружение в историю вашей семьи через призму системной терапии (ССТ).
-              </p>
-              <p>
-                Вместе мы создаем безопасное пространство, где можно вспомнить забытое, расширить восприятие информации и увидеть повторяющиеся сценарии.
-              </p>
+              <p className="font-medium">Всего 6–12 человек, чтобы вместе:</p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600">✅</span>
+                  <span>Создать безопасное пространство, где не страшно вспоминать и говорить.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600">✅</span>
+                  <span>Разобраться в хитросплетениях вашей семейной системы, опираясь на законы системы.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-600">✅</span>
+                  <span>Увидеть повторяющиеся сценарии и, возможно, найти ключи к сегодняшним трудностям.</span>
+                </li>
+              </ul>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                 <div className="flex items-start gap-3">
                   <div className="p-2 bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-400 rounded-lg"><Shield size={20} /></div>
@@ -229,7 +239,7 @@ const App = () => {
                   </div>
                   <div className="flex justify-center gap-2">
                     <a href="https://t.me/nastyamorozovapsy" target="_blank" rel="noopener noreferrer" className="p-2 bg-stone-50 dark:bg-stone-800 text-stone-600 dark:text-stone-400 rounded-xl hover:text-rose-700 dark:hover:text-rose-400 transition-colors">
-                      <MessageCircle size={18} />
+                      <TelegramIcon className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
@@ -245,10 +255,10 @@ const App = () => {
                   </div>
                   <div className="flex justify-center gap-2">
                     <a href="https://t.me/iragrodnik" target="_blank" rel="noopener noreferrer" className="p-2 bg-stone-50 dark:bg-stone-800 text-stone-600 dark:text-stone-400 rounded-xl hover:text-rose-700 dark:hover:text-rose-400 transition-colors">
-                      <MessageCircle size={18} />
+                      <TelegramIcon className="w-5 h-5" />
                     </a>
                     <a href="https://vk.com/igrodnik" target="_blank" rel="noopener noreferrer" className="p-2 bg-stone-50 dark:bg-stone-800 text-stone-600 dark:text-stone-400 rounded-xl hover:text-rose-700 dark:hover:text-rose-400 transition-colors">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.072 2H8.928C3.12 2 2 3.12 2 8.928v6.144C2 20.88 3.12 22 8.928 22h6.144c5.808 0 6.928-1.12 6.928-6.928V8.928C22 3.12 20.88 2 15.072 2zM17.46 14.86c.15.42.03.73-.57.73h-1.89c-.5 0-.73-.26-.85-.56 0 0-.96-2.35-2.32-3.87-.44-.44-.64-.59-.88-.59-.12 0-.3.15-.3.57v3.16c0 .5-.16.73-.59.73h-3.02c-.54 0-3.03-.38-5.76-4.04 0 0-2.88-6.72-2.88-6.72 0-.5.18-.73.61-.73H5.1c.5 0 .69.26.81.56 0 0 1.48 3.49 3.56 6.02.24.24.35.32.48.32.06 0 .15-.08.15-.32V7.12c0-.5-.14-.73-.57-.73H8.31c-.13 0-.08-.34.19-.51a4.24 4.24 0 0 1 2.5-.32c.67.06.81.4.81 1.05v3.83c0 .24.04.32.14.32.13 0 .24-.08.48-.32 1.34-1.63 2.76-5.18 2.76-5.18.1-.21.29-.56.8-.56h1.89c.5 0 .62.23.48.73-.24 1.15-2.61 4.7-2.61 4.7-.22.3-.3.44-.06.68.18.18.78.78 1.18 1.33 1.2 1.63 2.11 3.55 2.26 4.31z"/></svg>
+                      <VKIcon className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
@@ -265,7 +275,7 @@ const App = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 bg-white text-rose-800 rounded-full font-bold text-xl hover:bg-stone-50 transition-all transform hover:-translate-y-1 shadow-xl"
             >
-              Записаться в группу <ArrowRight />
+              <TelegramIcon className="w-6 h-6 text-rose-700" /> Записаться в группу <ArrowRight />
             </a>
             <p className="text-xs text-rose-200 dark:text-rose-400 uppercase tracking-widest font-semibold pt-4">Запись после предварительного знакомства</p>
           </div>
