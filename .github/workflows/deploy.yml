@@ -28,13 +28,10 @@ jobs:
       - name: Build
         run: |
           if [[ "${{ github.repository }}" == "semeynaya-istoriya/semeynaya-istoriya.github.io" ]]; then
-            export VITE_BASE="/"
+            VITE_BASE="/" npm run build
           else
-            export VITE_BASE="/semeynaya-istoriya/"
+            VITE_BASE="/semeynaya-istoriya/" npm run build
           fi
-          npm run build
-        env:
-          VITE_BASE: ${{ env.VITE_BASE }}
 
       - name: Add .nojekyll
         run: touch dist/.nojekyll
