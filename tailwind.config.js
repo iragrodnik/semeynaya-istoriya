@@ -11,6 +11,13 @@ export default {
         serif: ['Lora', 'serif'],
         sans: ['Inter', 'sans-serif'],
       },
+      colors: {
+        accent: {
+          DEFAULT: 'var(--color-accent)',
+          hover: 'var(--color-accent-hover)',
+          light: 'var(--color-accent-light)',
+        },
+      },
     },
   },
   plugins: [],
