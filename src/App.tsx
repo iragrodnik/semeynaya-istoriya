@@ -232,7 +232,7 @@ const App = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 {/* Anastasia */}
                 <div className="bg-white dark:bg-stone-900 p-6 rounded-[2rem] border border-stone-200 dark:border-stone-800 text-center space-y-4 shadow-sm">
-                  <img src="/M.jpg" alt="Анастасия Морозова" className="w-20 h-20 rounded-full mx-auto ring-4 ring-accent-light object-cover" />
+                  <img src={`${import.meta.env.BASE_URL}M.jpg`} alt="Анастасия Морозова" className="w-20 h-20 rounded-full mx-auto ring-4 ring-accent-light object-cover" />
                   <div>
                     <h3 className="font-bold text-stone-800 dark:text-stone-100 leading-tight">Анастасия Морозова</h3>
                     <p className="text-[10px] text-accent uppercase tracking-widest mt-1 font-bold">Психолог</p>
@@ -246,7 +246,7 @@ const App = () => {
 
                 {/* Irina */}
                 <div className="bg-white dark:bg-stone-900 p-6 rounded-[2rem] border border-stone-200 dark:border-stone-800 text-center space-y-4 shadow-sm">
-                  <img src="/G.jpg" alt="Ирина Гродник" className="w-20 h-20 rounded-full mx-auto ring-4 ring-accent-light object-cover" />
+                  <img src={`${import.meta.env.BASE_URL}G.jpg`} alt="Ирина Гродник" className="w-20 h-20 rounded-full mx-auto ring-4 ring-accent-light object-cover" />
                   <div>
                     <h3 className="font-bold text-stone-800 dark:text-stone-100 leading-tight">Ирина Гродник</h3>
                     <p className="text-[10px] text-accent uppercase tracking-widest mt-1 font-bold">Психолог</p>
