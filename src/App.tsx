@@ -100,22 +100,19 @@ const App = () => {
 
       {/* About Section */}
       <section id="about" className="py-20 bg-white dark:bg-stone-900/50">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-3xl mx-auto px-4">
           <div className="space-y-6">
             <h2 className="text-3xl font-serif font-bold dark:text-stone-100">Приглашаем в команду исследователей</h2>
             <div className="space-y-4 text-stone-600 dark:text-stone-400 text-lg">
               <p className="font-medium">Всего 6–12 человек, чтобы вместе:</p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600">✅</span>
                   <span>Создать безопасное пространство, где не страшно вспоминать и говорить.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600">✅</span>
                   <span>Разобраться в хитросплетениях вашей семейной системы, опираясь на законы системы.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-600">✅</span>
                   <span>Увидеть повторяющиеся сценарии и, возможно, найти ключи к сегодняшним трудностям.</span>
                 </li>
               </ul>
@@ -130,12 +127,6 @@ const App = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="bg-stone-100 dark:bg-stone-800 aspect-video rounded-3xl overflow-hidden relative group shadow-2xl ring-1 ring-stone-200 dark:ring-stone-700">
-             <div className="absolute inset-0 flex items-center justify-center text-stone-400 dark:text-stone-500 font-serif italic px-8 text-center">
-               Здесь может быть ваше семейное древо или атмосферное фото
-             </div>
-             <div className="absolute inset-0 bg-stone-900/5 group-hover:bg-transparent transition-all" />
           </div>
         </div>
       </section>

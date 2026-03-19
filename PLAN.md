@@ -39,3 +39,12 @@
 - [x] Поддержка темной темы (auto-mode)
 - [x] Добавление мета-тегов Open Graph и Favicon
 - [x] Настройка GitHub Actions и деплой на GitHub Pages
+
+### 19 марта 2026
+- [x] Реализованы рандомные акценты (20 цветовых тем через CSS custom properties + `data-accent` на `<html>`)
+- [x] Добавлен компонент `ThemeSwitcher` — устанавливает случайный акцент при каждой загрузке
+- [x] Все `rose-*` Tailwind-классы заменены на `accent`/`accent-hover`/`accent-light`
+- [x] Добавлены фото ведущих (`M.jpg`, `G.jpg`) с поддержкой GitHub Pages через `import.meta.env.BASE_URL`
+- [x] Исправлен Vite (`preserveSymlinks: true`) для работы через символическую ссылку `C:\repos`
+- [x] Убран плейсхолдер фото в секции «О группе», секция стала одноколоночной
+- [x] Убраны эмодзи-галочки из списка целей
