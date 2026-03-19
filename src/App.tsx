@@ -203,7 +203,7 @@ const App = () => {
                   <div className="p-3 bg-white dark:bg-stone-900 rounded-2xl text-accent shadow-sm"><Calendar size={24} /></div>
                   <div>
                     <div className="text-sm text-stone-500 dark:text-stone-500 uppercase tracking-wider font-semibold">Старт</div>
-                    <div className="text-xl">16 марта</div>
+                    <div className="text-xl"><span className="line-through text-stone-400 text-base mr-2">16 марта</span>23 марта</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -266,7 +266,7 @@ const App = () => {
 
           <div className="max-w-xl mx-auto text-center space-y-8 bg-accent p-10 md:p-16 rounded-[3rem] text-white shadow-2xl shadow-accent-light dark:shadow-none">
             <h3 className="text-3xl font-serif font-bold">Готовы исследовать свою историю?</h3>
-            <p className="text-rose-100 dark:text-rose-300 text-lg">Количество мест ограничено (всего 12). Группа закрытая, старт 16 марта.</p>
+            <p className="text-rose-100 dark:text-rose-300 text-lg">Количество мест ограничено (всего 12). Группа закрытая, старт 23 марта.</p>
             <a 
               href="https://t.me/iragrodnik" 
               target="_blank" 
